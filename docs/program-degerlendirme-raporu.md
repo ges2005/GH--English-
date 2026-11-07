@@ -2,6 +2,8 @@
 
 > Kapsam: Claude üzerinde kurulacak 3 ajanlı (Amerikalı öğretmen, Türk öğretmen, program koordinatörü) 6 aylık İngilizce programının değerlendirmesi, riskleri ve iyileştirme önerileri.
 > Tarih: Kasım 2026
+>
+> **Güncelleme:** Özel uygulama yapılmayacak; program **doğrudan Claude üzerinde** yürüyecek. Bu rapor tasarımın gerekçelerini anlatır. Kopyala-yapıştır hazır talimatlar, ortak dosyalar ve adım adım kullanım için **[KURULUM.md](../KURULUM.md)**, `ortak/` ve `projeler/` klasörlerine bakın.
 
 ---
 
@@ -14,7 +16,7 @@ Ancak kurgunun **beş önemli açığı** var. Bunlar giderilmezse program 2-3. 
 1. **Hedef/süre gerçekçiliği:** Sıfırdan 6 ayda C1, günde 4-5 saat gerektirir. Hedef başlangıç seviyesine ve günlük süreye göre yeniden tanımlanmalı.
 2. **Ajanlar arasında ortak hafıza yok:** Üç ajan birbirinin ne yaptığını bilmez. Hepsinin okuyup beslediği **tek bir “öğrenci dosyası”** şart.
 3. **Claude’un ses ve telaffuz sınırları:** Claude’a “Amerikan aksanı” persona talimatıyla verilemez ve sesli modda sizin telaffuzunuzu gerçekten “duyamaz”, çünkü konuşmanız önce metne çevrilir. Speaking ve listening için dış kaynak ve araç gerekir.
-4. **“Kelime ezberi” yaklaşımı:** Liste ezberi verimsizdir. Aralıklı tekrar (SRS, ör. Anki) ve bağlam içinde öğrenme şart. “Kaç kelime ezberledik” yerine “kaç kelime kalıcı oldu” ölçülmeli.
+4. **“Kelime ezberi” yaklaşımı:** Liste ezberi verimsizdir. Aralıklı tekrar (Claude içinde takvim bazlı bir sistemle) ve bağlam içinde öğrenme şart. “Kaç kelime ezberledik” yerine “kaç kelime kalıcı oldu” ölçülmeli.
 5. **Ölçme-değerlendirme eksik:** Seviye tespiti, ara sınav, bitiş sınavı ve dış (Claude dışı) bir ölçüt yok. Yapay zekâ öğretmenler not vermede cömert olma eğilimindedir.
 
 Aşağıda her başlığı ayrıntılandırıp somut çözümler, haftalık program, 6 aylık faz planı ve ajan talimatı taslakları sunuyorum.
@@ -74,7 +76,7 @@ Bunun için **ilk iş seviye tespiti** olmalı (bkz. §8).
 | Kurgudaki varsayım | Gerçek durum | Çözüm |
 |---|---|---|
 | “Amerikan aksanıyla konuşuyor” | Metin sohbette aksan yoktur. Sesli modda ise hazır seslerden biri seçilir; persona talimatıyla aksan belirlenemez ve kişiye özel ses yaratılamaz. | Personanın “Amerikalılığı” metinde **Amerikan İngilizcesi** demektir: yazım (color), kelime (apartment, fall), deyim, kültür ve telaffuz rehberliği. Gerçek Amerikan aksanını **otantik ses kaynaklarından** dinleyin (§5.3). |
-| “Speaking’de telaffuzumu düzeltir” | Sesli modda konuşmanız önce metne çevrilir ve model metni görür. Konuşma tanıma sistemi yanlış telaffuzu çoğu zaman “doğru kelimeye” düzelttiği için öğretmen telaffuz hatanızı **göremez**. | (1) Telaffuza özel uygulamalar (ör. telaffuz puanlayan uygulamalar), (2) kendinizi kaydedip sözlük ve YouGlish sesleriyle karşılaştırma, (3) shadowing, (4) 2-4 haftada bir 30 dakikalık **insan öğretmen** seansı (italki, Preply, Cambly vb.) ile kalibrasyon. **Pratik ipucu:** Sesli modda ekranda çıkan transkripte bakın. Söylediğiniz kelime yanlış yazıldıysa o kelimede anlaşılırlık sorunu var demektir. |
+| “Speaking’de telaffuzumu düzeltir” | Sesli modda konuşmanız önce metne çevrilir ve model metni görür. Konuşma tanıma sistemi yanlış telaffuzu çoğu zaman “doğru kelimeye” düzelttiği için öğretmen telaffuz hatanızı **göremez**. | (1) Kendinizi kaydedip sözlük ve YouGlish sesleriyle karşılaştırma, (2) shadowing, (3) opsiyonel olarak Hafta 13 ve 26'da 30 dakikalık **insan öğretmen** seansıyla kalibrasyon. **Pratik ipucu:** Sesli modda ekranda çıkan transkripte bakın. Söylediğiniz kelime yanlış yazıldıysa o kelimede anlaşılırlık sorunu var demektir. |
 | “Ajanlar birbirinden haberdar” | Her proje veya sohbet ayrıdır. Claude’un hafıza özellikleri hesaba göre değişse de yapılandırılmış ilerleme verisi (saatler, kelime sayıları, hata listesi) için bunlara güvenilmez. | **Tek bir öğrenci dosyası** ve her oturum sonunda standart bir **oturum raporu** (§3.2, §3.3). |
 | “Koç bizi takip eder, yönlendirir” | Claude kendiliğinden size yazmaz ve hatırlatma yapmaz. | Takvim ve telefon hatırlatıcıları kurun. Koç, siz yazdığınızda logu okuyarak değerlendirir. |
 | “Öğretmen seviyemizi değerlendirir” | Dil modelleri cesaretlendirici olmaya, yani **not şişirmeye** eğilimlidir. | Rubrik (değerlendirme ölçeği) zorunlu olsun, “dürüst ol” talimatı verilsin, ayrı bir “sınav görevlisi” rolü olsun ve **Claude dışı testler** yapılsın (§8). |
@@ -105,14 +107,14 @@ Mevcut kurguda en büyük yapısal eksik bu. Örnek: Amerikalı öğretmen speak
 ### 2.4 “Kelime ezberi” oturumu
 
 - Liste ezberi kısa vadede işe yarar gibi görünür ama unutma eğrisi yüzünden kelimelerin büyük kısmı haftalar içinde kaybolur.
-- **Aralıklı tekrar (SRS):** Kelimeyi tam unutmak üzereyken tekrar eder. Bu iş için Anki en yaygın ve ücretsiz araçtır (iOS sürümü ücretlidir). Claude tekrarları zamanlayamaz, o yüzden **tekrarı Anki’ye, öğretmeyi Claude’a** bırakın.
-- “Kaç kelime ezberledik” yanıltıcı bir metriktir. Doğru metrikler: **olgunlaşmış kart sayısı** (21+ gün aralığa ulaşmış kartlar), **tekrar doğruluk oranı** (%85-90 iyidir) ve **aktif kullanılan kelime** (yazı ve konuşmada kullanılanlar).
+- **Aralıklı tekrar:** Kelimeyi tam unutmak üzereyken tekrar eder. Claude kendiliğinden tekrar zamanlayamaz, ama tekrarları **takvime bağlayarak** Claude içinde kurulabilir: +1 gün, +3 gün, hafta sonu testi (+7), ay sonu testi (+30), ara ve bitiş sınavı dönemi (+90). Yanlış bilinenler “Zor Kelimeler” listesine girer (`ortak/kelime-defteri.md`).
+- “Kaç kelime ezberledik” yanıltıcı bir metriktir. Doğru metrikler: **tekrar başarı oranı** (%80-90 iyidir), **ay sonu testi başarısı** ve **aktif kullanılan kelime** (yazı ve konuşmada kullanılanlar).
 
 Ayrıntı §5.1’de.
 
 ### 2.5 Becerilerin kopuk oturumlarda çalışılması
 
-Ayrı oturumlar fikri iyi, ama her oturum farklı bir konudaysa öğrenme dağılır. **Haftalık tema** ile bütünleştirin: Pazartesi okuduğunuz metindeki kelimeler Anki’ye girsin, çarşamba aynı temada yazın, perşembe aynı temada Amerikalı öğretmenle konuşun. Bir kelimeyi farklı becerilerde 5-7 kez görmek kalıcılığı büyük ölçüde artırır.
+Ayrı oturumlar fikri iyi, ama her oturum farklı bir konudaysa öğrenme dağılır. **Haftalık tema** ile bütünleştirin: Pazartesi okuduğunuz metindeki kelimeler kelime defterine girsin, çarşamba aynı temada yazın, perşembe aynı temada Amerikalı öğretmenle konuşun. Bir kelimeyi farklı becerilerde 5-7 kez görmek kalıcılığı büyük ölçüde artırır.
 
 ### 2.6 Ölçme-değerlendirme eksikliği
 
@@ -144,29 +146,23 @@ Başlangıç seviyesi, ara ölçüm ve bitiş ölçümü yoksa “B2’ye geldik
 
 ### 3.2 Öğrenci dosyası (tek doğruluk kaynağı)
 
-Bu repoda (veya Google Drive’da) şöyle bir yapı önerilir:
+Claude üzerinde bu yapı şöyle kurulur (ayrıntı: [KURULUM.md](../KURULUM.md)):
 
-```
-ogrenci-dosyasi/
-├── profil.md            # Kim, neden öğreniyor, hedef, ilgi alanları, uygun saatler,
-│                        # beceri bazında güncel seviye (A2/B1...)
-├── plan.md              # Güncel faz, bu haftanın teması, haftalık hedefler
-├── gunluk-log.md        # Tarih | dakika (kelime/R/L/W/S/gramer) | Anki | enerji 1-5 | not
-├── hata-defteri.md      # Hata → doğrusu | kural | kategori | kaç kez | ilk/son görülme
-├── kelimeler.csv        # kelime | tür | anlam/tanım | örnek cümle | kaynak | tarih
-├── oturum-raporlari/    # 2026-11-08-amerikali-speaking.md ...
-├── yazilar/             # Writing ödevleri: ilk taslak + düzeltilmiş + yeniden yazım
-├── ses-kayitlari.md     # Aylık konuşma kaydı linkleri (ilerlemeyi duymak için)
-└── degerlendirmeler.md  # Test sonuçları (EF SET, ara/bitiş sınavı, rubrik puanları)
-```
+| Bilgi | Nerede durur | Kim günceller |
+|---|---|---|
+| Profil, seviye, hafta ayarları, hata defteri, test sonuçları, öğretmenlere notlar | `ortak/ogrenci-dosyasi.md` → **dört projenin** bilgi kaynağında | Koç, her pazar |
+| Müfredat, ritim, oturum akışları, şablonlar | `ortak/program-plani.md` → dört projede (sabit) | Değişmez |
+| Kelime listeleri, Zor Kelimeler | `ortak/kelime-defteri.md` → Elif Hoca projesinde | Elif Hoca, her pazar (`HAFTAYI KAPAT`) |
+| Günlük kayıt (LOG) ve oturum raporları | Koç projesindeki haftalık **“Hafta NN”** sohbeti | Siz yapıştırırsınız |
+| Konuşma kayıtları | Telefonunuzda (Gün 0, Hafta 13, Hafta 26) | Siz |
 
-Her ajan projesinin bilgi kaynağına en azından `profil.md`, `plan.md` ve `hata-defteri.md` eklenir ve haftada bir güncellenir.
+Öğretmenler oturum başında öğrenci dosyasını okur. Oturum sonunda rapor üretirler, rapor koçun haftalık sohbetine gider. Pazar günü koç dosyayı günceller ve döngü kapanır.
 
 **Birden fazla kişi öğreniyorsa** (“biz”): Her kişinin kendi dosyası olmalı ve ajan oturum başında kiminle konuştuğunu bilmeli. Ayrıca birbirinizle İngilizce konuşmanız en değerli ek pratiklerden biri olur.
 
 ### 3.3 Oturum sonu raporu standardı
 
-Her öğretmen oturumu bu şablonla bitirir. Raporu kopyalayıp `oturum-raporlari/` klasörüne yapıştırırsınız. Koç bunları okur.
+Her öğretmen oturumu bu şablonla bitirir (`REPORT` komutuyla). Raporu kopyalayıp koç projesindeki haftalık “Hafta NN” sohbetine yapıştırırsınız. Koç bunları okur. Şablonun son hali `ortak/program-plani.md` içindedir.
 
 ```
 === SESSION REPORT ===
@@ -263,7 +259,7 @@ Raporu baştan İngilizce tutmak, onu da küçük bir okuma pratiğine çevirir.
 |---|---|---|
 | Devamlılık | Çalışılan gün, seri (streak), haftalık toplam süre (hedef ve gerçek) | Haftada ≥6 gün; “iki gün üst üste kaçırma” kuralı |
 | Denge | Becerilere göre süre dağılımı | Hiçbir beceri haftalık sürenin %10’unun altına düşmesin |
-| Kelime | Anki: günlük tekrar tamamlandı mı, yeni kart, doğruluk oranı, olgun kart sayısı | Doğruluk %85-90; birikmiş tekrar < 1 günlük miktar |
+| Kelime | Günlük VOCAB yapıldı mı, yeni kelime sayısı, tekrar başarısı, Zor Kelimeler sayısı | Tekrar başarısı %80-90; Zor Kelimeler listesi büyümemeli |
 | Writing | Haftalık kelime sayısı, 100 kelimede hata sayısı | Hata yoğunluğu aydan aya düşmeli |
 | Speaking | Haftalık konuşma dakikası, aylık kayıt karşılaştırması | Duraklama ve “ııı” sıklığı azalmalı |
 | Girdi | Okunan sayfa/kelime, dinlenen dakika | Haftalık artış |
@@ -271,13 +267,13 @@ Raporu baştan İngilizce tutmak, onu da küçük bir okuma pratiğine çevirir.
 | Öznel | Enerji, motivasyon, zorlanma (1-5) | 2 hafta üst üste ≤2 → plan hafifletilir |
 
 **Ritim:**
-- **Günlük (2 dk):** `gunluk-log.md`’ye bir satır. Koça mesaj atmak gerekmez.
+- **Günlük (2 dk):** Koçun haftalık sohbetine bir LOG satırı ve günün raporları. Koç 3-4 satırla cevap verir.
 - **Haftalık (15-20 dk, ör. pazar):** Koç logu ve raporları okur. Ardından 3 güçlü yan, 3 gelişim alanı, sonraki haftanın teması ve **en fazla 3 plan değişikliği** önerir.
 - **Aylık (30-45 dk):** Sınav görevlisinin sonuçlarıyla birlikte ilerleme raporu ve faz geçişi kararı verilir.
 
 **Koçun dikkat etmesi gerekenler:**
 - **“İstek” ile “ihtiyaç” dengesi:** Öğrenciler zorlandıkları beceriden (genelde speaking veya writing) kaçar ve “daha çok kelime çalışayım” der. Koç isteği dinler ama ihtiyacı korur.
-- **Kötü gün protokolü (“minimum gün”):** 20 dakika: Anki + 5-10 dakika İngilizce dinleme. Seriyi bozmamak, mükemmel gün yapmaktan daha önemlidir.
+- **Kötü gün protokolü (“minimum gün”):** 20 dakika: kelime tekrarı + 5-10 dakika İngilizce dinleme. Seriyi bozmamak, mükemmel gün yapmaktan daha önemlidir.
 - **Dürüstlük:** Hedeften sapma varsa açıkça söyler. Suçlamaz, çözüm önerir.
 - **Dil:** Sorunları ve duyguları tam ifade edebilmeniz için meta konuşmalarda Türkçe serbest olsun. B1’den sonra varsayılan dil İngilizce olsun; bu da ek bir konuşma pratiği olur.
 
@@ -288,12 +284,13 @@ Raporu baştan İngilizce tutmak, onu da küçük bir okuma pratiğine çevirir.
 ### 5.1 Kelime
 
 - **Ne kadar?** Yaygın tahminlere göre B2 için yaklaşık 3.500-4.000, C1 için 4.000-5.000+ kelime ailesini (en azından tanıyarak) bilmek gerekir.
-- **Günlük yeni kelime:** İlk 2 hafta 10-15, sonra **15-25**. Basit bir kural: günlük tekrar sayısı ≈ günlük yeni kart × 10. Yani 20 yeni kart, yerleşik düzende günde ~200 tekrar ve **30-40 dakika** demektir. Bu süreyi plana mutlaka koyun.
-- **6 aylık hesap:** ~156 gün × 18 yeni kelime ≈ 2.800 kelime + okuma ve dinlemeden gelen dolaylı öğrenme + mevcut bilginiz. A2 başlangıçla B2 kelime hedefi bu şekilde ulaşılabilir.
+- **Günlük yeni kelime:** İlk 2 hafta 10-12, sonra **15-20**. VOCAB oturumu (tekrar + yeni + mini günlük) günde 25-35 dakika sürer.
+- **6 aylık hesap:** ~156 gün × 17 yeni kelime ≈ 2.600 kelime + okuma ve dinlemeden gelen dolaylı öğrenme + mevcut bilginiz. A2 başlangıçla B2 kelime hedefi bu şekilde ulaşılabilir.
+- **Tekrar sistemi:** Takvim bazlı (+1, +3, +7, +30, +90 gün) ve “Zor Kelimeler” listeli. Ayrıntı `ortak/kelime-defteri.md` içinde. Tekrar kelimeleri Claude’a etkileşimli kart (artifact) olarak da hazırlatılabilir.
 - **Hangi kelimeler?** Önce sıklık: **Oxford 3000** (A1-B2 çekirdek), ardından **Oxford 5000** (B2-C1 eklemeleri). Buna ek olarak kendi alanınızın (iş, hobi) kelimeleri ve okuduklarınızdan “madencilik” ile çıkardığınız kelimeler. C1 için akademik kelime listesi (AWL).
 - **Kart tasarımı:** Sadece “kelime → anlam” değil, **cümle içinde** (boşluk doldurma), Amerikan telaffuz sesi ve sık kullanıldığı kalıp (collocation) ile. Aktif kullanmak istediğiniz kelimeler için ters kart (Türkçe/tanım → İngilizce).
 - **Çift dilliden tek dilliye geçiş:** A2 sonu ve B1 başından itibaren İngilizce tanımlara geçin (Oxford Learner’s Dictionaries, Cambridge Dictionary; ikisi de Amerikan telaffuzu sunar).
-- **Claude’un rolü:** Tekrar yaptırmak değil, **öğretmek**: günün kelimelerini bağlam içinde sunmak, kelime ailesi (decide, decision, decisive), sık kalıplar, örnek cümleler, kelimelerle mini hikâye, kısa kullanım testi ve **Anki’ye aktarılabilir CSV** üretmek.
+- **Claude’un rolü (Elif Hoca):** Günün kelimelerini bağlam içinde sunmak, kelime ailesi (decide, decision, decisive), sık kalıplar, örnek cümleler, vurgu/telaffuz ipucu, takvime göre tekrar soruları, mini günlük düzeltmesi ve haftalık/aylık testler.
 
 ### 5.2 Reading
 
@@ -328,7 +325,7 @@ Claude’un sesli modu, Claude’un sesine cevap vererek etkileşimli dinleme pr
   2. Öğretmen hataları önce **sadece kodlarla** işaretler ([ART] article, [VT] fiil zamanı, [WO] kelime sırası, [PREP], [SP] yazım…). Siz kendiniz düzeltmeyi deneyin.
   3. Öğretmen düzeltmeleri ve “anadili İngilizce olan biri nasıl yazardı” versiyonunu verir.
   4. **Yeniden yazın.** Öğrenme en çok bu adımda olur.
-  5. Hatalar hata defterine, yeni ifadeler Anki’ye gider.
+  5. Hatalar hata defterine, yeni ifadeler kelime defterine gider.
 - **Rubrik:** Cambridge yazma ölçütleri (İçerik, İletişimsel Başarı, Organizasyon, Dil) veya IELTS bant tanımları (Görev, Tutarlılık, Kelime, Gramer). Puanlar aylık takip edilir.
 - **Kural:** Claude sizin yerinize yazmaz. Yalnızca geri bildirim verir.
 
@@ -344,7 +341,7 @@ Claude’un sesli modu, Claude’un sesine cevap vererek etkileşimli dinleme pr
 
 - **Temel kaynak:** Raymond Murphy’nin *Grammar in Use* serisinin **Amerikan İngilizcesi sürümleri** (*Basic Grammar in Use*, *Grammar in Use Intermediate*). Türk hoca konuları bu sırayla işleyebilir.
 - **İki kaynaktan konu:** (1) seviye müfredatı (§7) ve (2) hata defteri (gerçek hatalarınız).
-- **Aralıklı gramer tekrarı:** Her konu 1 gün, 1 hafta ve 1 ay sonra kısa testle tekrar edilir. Önemli kalıplardan Anki kartı da yapılabilir.
+- **Aralıklı gramer tekrarı:** Her konu 1 gün, 1 hafta ve 1 ay sonra kısa testle tekrar edilir. Önemli kalıplar kelime defterine de eklenebilir.
 
 ---
 
@@ -354,14 +351,14 @@ Claude’un sesli modu, Claude’un sesine cevap vererek etkileşimli dinleme pr
 
 | Blok | Süre | İçerik |
 |---|---|---|
-| Sabah | 25-35 dk | Anki (tekrar + yeni kelimeler) |
+| Sabah | 25-35 dk | VOCAB (tekrar + yeni kelimeler + mini günlük) |
 | Girdi | 30-40 dk | Reading **veya** Listening oturumu (günlere göre değişir) |
 | Öğretmen | 30-45 dk | Gramer (Türk hoca) **veya** Speaking (Amerikalı) |
 | Üretim | 20-30 dk | Writing ödevi veya günlük |
 | Keyif | 15-30 dk | Dizi, kademeli kitap, podcast (kapsamlı girdi) |
 | Kapanış | 2 dk | Log satırı |
 
-**Minimum gün:** 20 dk (Anki + 5-10 dk dinleme).
+**Minimum gün:** 20 dk (kelime tekrarı + 5-10 dk dinleme).
 
 ### 6.2 Haftalık tema döngüsü örneği
 
@@ -369,13 +366,13 @@ Tema örnekleri: yemek, iş, seyahat, sağlık, teknoloji, para, çevre, eğitim
 
 | Gün | Ana oturumlar |
 |---|---|
-| Pazartesi | Reading (tema metni) + kelime madenciliği → Anki · Gramer 1 |
+| Pazartesi | Reading (tema metni) + kelime madenciliği → kelime defteri · Gramer 1 |
 | Salı | Listening (tema) · Speaking (temaya ısınma) |
 | Çarşamba | Writing ödevi (tema) · Gramer 2 / alıştırma |
 | Perşembe | Kapsamlı okuma/dinleme · Speaking (rol oyunu) |
 | Cuma | Writing yeniden yazım · Hata kliniği (hata defterinden) |
 | Cumartesi | Speaking (hikâye, 4/3/2, tartışma) · Film/dizi |
-| Pazar | Hafif gün: sadece Anki · **Koçla haftalık değerlendirme** · Sonraki haftanın planı |
+| Pazar | Hafif gün: hafta sonu kelime testi · **Koçla haftalık değerlendirme** · Sonraki haftanın planı |
 
 ---
 
@@ -385,7 +382,7 @@ Tema örnekleri: yemek, iş, seyahat, sağlık, teknoloji, para, çevre, eğitim
 
 | Faz | Hafta | Hedef | Gramer odağı | Diğer odaklar | Türk hoca TR oranı |
 |---|---|---|---|---|---|
-| **0 – Kurulum** | 0 | Seviye tespiti, sistem kurulumu | — | Hedef belirleme, Anki, dosyalar, sınıf dili, takvim | — |
+| **0 – Kurulum** | 0 | Seviye tespiti, sistem kurulumu | — | Hedef belirleme, Claude projeleri, dosyalar, sınıf dili, takvim | — |
 | **1 – Temel** | 1-6 | A1 → A2 | be/have, present simple & continuous, past simple, will/going to, can, soru yapıları, temel article ve preposition, sayılabilir/sayılamaz | İngilizce sesler ve Amerikan telaffuzu temeli, en sık 1.000-1.200 kelime, kısa mesaj ve paragraf yazma, Amerikalı ile 10-20 dk kontrollü konuşma | ~%60-70 |
 | **2 – Gelişme** | 7-13 | A2 → B1 | present perfect, past continuous, karşılaştırma, modal’lar (should/must/have to), 1. ve 2. conditional, gerund/infinitive, passive’e giriş, ilk 50 phrasal verb | Kademeli B1 okuma, e-posta ve hikâye (120-150 kelime), 30 dk konuşma, tek dilli sözlüğe geçiş · **Hafta 13: ara değerlendirme** | ~%40-50 |
 | **3 – Eşik** | 14-20 | B1 → B1+/B2 | relative clause, reported speech, tüm conditional’lar (mixed dahil), tüm zamanlarda passive, çıkarım modal’ları (must have been), used to/would, bağlaçlar | Otantik içerik (haber, podcast, İngilizce altyazılı dizi), fikir yazısı (200-250 kelime), tartışma, collocation | ~%10-20 |
@@ -399,7 +396,7 @@ Tema örnekleri: yemek, iş, seyahat, sağlık, teknoloji, para, çevre, eğitim
 | Zaman | Ne yapılır |
 |---|---|
 | **Gün 0** | **EF SET** (ücretsiz, standart, CEFR’e göre okuma ve dinleme puanı) + 150 kelimelik teşhis yazısı + 2 dk konuşma kaydı + kelime dağarcığı testi + Claude ile teşhis görüşmesi |
-| **Her hafta** | Koç değerlendirmesi, Anki istatistikleri, gramer mini testi |
+| **Her hafta** | Koç değerlendirmesi, kelime testi sonuçları, gramer mini testi |
 | **Her 4 hafta** | Sınav görevlisi: rubrikli yazı puanı, konuşma kaydı karşılaştırması, işlenen gramer konularından test, beceri bazında CEFR tahmini (kanıtlarıyla) |
 | **Hafta 13 (ara)** | EF SET tekrar + hedef seviyenin resmî örnek sınavından bölümler (Cambridge B1 Preliminary veya B2 First örnek testleri ücretsizdir) |
 | **Hafta 26 (bitiş)** | EF SET + tam bir B2 First örnek sınavı + insan öğretmenle konuşma değerlendirmesi + rubrikli yazı |
@@ -409,157 +406,45 @@ Tema örnekleri: yemek, iş, seyahat, sağlık, teknoloji, para, çevre, eğitim
 
 ---
 
-## 9. Teknik uygulama yol haritası
+## 9. Claude üzerinde uygulama mimarisi
 
-### Aşama 1: Hemen başla (1-2 gün)
+Özel uygulama yok; program Claude’un hazır özellikleriyle kurulur:
 
-Uygulama yazmayı beklemeden **bugün** öğrenmeye başlayın.
+| Claude özelliği | Programdaki kullanımı |
+|---|---|
+| **Projects (talimat + bilgi kaynağı)** | 4 proje = 4 kişi: Dan Carter, Elif Hoca, Murat Bey, Sınav Görevlisi. Persona kuralları talimatta, ortak dosyalar bilgi kaynağında. |
+| **Yeni sohbet / haftalık sohbet** | Her oturum yeni sohbet (persona taze kalır). Kelime ve koç için haftalık tek sohbet (süreklilik). |
+| **Sesli mod (mobil uygulama)** | Dan ile speaking, sesli listening pratiği, telaffuz için transkript kontrolü. |
+| **Dosya ve fotoğraf yükleme** | El yazısı ödevler, fotoğraf betimleme, okuma metni (PDF veya ekran görüntüsü). |
+| **Artifact’lar** | Etkileşimli gramer alıştırmaları, kelime kartları, quizler. |
+| **Hafıza / geçmiş sohbet arama** (hesapta varsa) | Proje içinde önceki dersleri hatırlamaya yardım eder; asıl kaynak yine dosyalardır. |
 
-- claude.ai’de 3 proje açın (+ opsiyonel Sınav Görevlisi): **Amerikalı Öğretmen**, **Türk Öğretmen**, **Koç**.
-- Her projenin talimatına persona talimatını (§10) yazın.
-- Projelerin bilgi kaynağına `profil.md`, `plan.md`, `hata-defteri.md` ve persona kartını ekleyin. Haftalık güncelleyin.
-- Her oturum **yeni sohbet** olsun ve **oturum raporuyla** bitsin.
-- Log ve raporlar için tek bir yer seçin: bu repo veya Google Drive.
+**Bilgi akışı:** oturum → `REPORT` → koçun “Hafta NN” sohbeti → pazar günü haftalık değerlendirme → güncellenmiş `ogrenci-dosyasi.md` → dört projeye yükleme.
 
-### Aşama 2: Düzen (ilk ay)
+**Manuel iş yükü:** Her oturumdan sonra raporu kopyala-yapıştır (~30 sn), günde bir LOG satırı (~1 dk), haftada bir dosya yükleme (~3-5 dk).
 
-- `ogrenci-dosyasi/` yapısını bu repoda kurun (§3.2).
-- İsterseniz **Claude Code** ile bu repo üzerinde çalışın. `.claude/agents/` altında alt ajanlar tanımlanabilir ve dosyaları doğrudan okuyup yazabilirler. Örneğin koç, log dosyasından haftalık istatistikleri kendisi hesaplar. Bu yöntem metin tabanlıdır; speaking için yine sesli mod veya dış araç gerekir.
-
-### Aşama 3: Kendi uygulamanız (2. aydan sonra, isteğe bağlı)
-
-Repo hedefiniz olan uygulama için Claude API ile:
-- **Ajanlar:** Her persona için sistem talimatı ve ortak veritabanı (profil, log, kelime, hata).
-- **Aralıklı tekrar:** FSRS algoritması (Anki’nin modern zamanlayıcısı).
-- **Ses:** Amerikan sesli bir TTS servisi (aksan **ancak burada** gerçekten seçilebilir) ve telaffuz değerlendirmesi yapan bir konuşma tanıma servisi.
-- **Panel:** İlerleme grafikleri ve KPI’lar.
-
-**Önemli uyarı:** Uygulama geliştirmek, **çalışmadan kaçmanın** en sofistike yolu olabilir. Kural: Kod yazma süresi çalışma süresine sayılmaz. Uygulamayı ancak günlük hedefler tamamlandıktan sonra geliştirin. Kodu, yorumları ve belgeleri **İngilizce** yazın; bu da ek pratik olur.
+Claude’un yapamadıkları için yalnızca **içerik kaynakları** kullanılır, uygulama geliştirilmez: otantik Amerikan sesi (podcast, dizi, TED), kademeli okuma kitapları ve EF SET (dış ölçüt). Ayrıntı: [KURULUM.md](../KURULUM.md) §9.
 
 ---
 
-## 10. Ajan talimatı taslakları
+## 10. Ajan talimatları
 
-> Bunlar başlangıç taslaklarıdır. Köşeli parantezleri doldurun. Amerikalı öğretmenin talimatını İngilizce yazmak, onun İngilizce kalmasını güçlendirir.
+Bu bölümdeki ilk taslaklar, kopyala-yapıştır hazır son hallerine taşındı:
 
-### 10.1 Amerikalı öğretmen (İngilizce)
+| Proje | Talimat | Ek bilgi dosyası |
+|---|---|---|
+| Dan Carter – Native Teacher | [`projeler/1-dan-carter-native-teacher/talimat.md`](../projeler/1-dan-carter-native-teacher/talimat.md) | `persona-karti.md` |
+| Elif Hoca – Türk Öğretmen | [`projeler/2-elif-hoca-turk-ogretmen/talimat.md`](../projeler/2-elif-hoca-turk-ogretmen/talimat.md) | `hata-haritasi.md` |
+| Murat Bey – Program Koçu | [`projeler/3-murat-bey-program-kocu/talimat.md`](../projeler/3-murat-bey-program-kocu/talimat.md) | — |
+| Sınav Görevlisi | [`projeler/4-sinav-gorevlisi/talimat.md`](../projeler/4-sinav-gorevlisi/talimat.md) | — |
 
-```text
-You are [NAME], a 50-year-old American English teacher from [Ohio]. You have
-25+ years of experience teaching English to adult learners. You speak and write
-General American English. Persona details (family, hobbies, career) are in the
-"persona card" file — stay consistent with it and do not invent major new facts.
-
-CORE RULES
-1. English only. You do not speak or understand Turkish. If the student writes in
-   Turkish, reply kindly in simple English, ask them to try in English, and give
-   one short model sentence they can use. Never translate into Turkish.
-2. Grade your language to the student's CURRENT LEVEL (see student profile):
-   - A1-A2: short sentences, the most common 1,000-2,000 words, max 2 new words
-     per message, lots of examples, check understanding often.
-   - B1: clear, natural English; introduce common phrasal verbs and idioms.
-   - B2+: fully natural English, idioms, nuance, register.
-3. Use American spelling, vocabulary and culture (color, apartment, fall, cookie).
-4. The student should talk ~70% of the time. Ask open questions. Be curious.
-5. Error correction: during conversation, do not interrupt; use recasts (repeat
-   the correct form naturally). At the end, give: top 3 errors (wrong → right +
-   short reason), 3 more natural expressions, 1 pronunciation tip.
-6. Be warm, patient and encouraging — but honest. Never praise incorrect English.
-   Never inflate the student's level.
-7. Check the student's error notebook at the start; watch for those errors.
-8. End every session with the SESSION REPORT template, exactly.
-
-SESSION TYPES (the student will name one): free conversation, role-play,
-picture description, storytelling, 4/3/2 fluency, debate, presentation practice,
-reading discussion, listening debrief, writing naturalness review,
-pronunciation drill.
-```
-
-### 10.2 Türk öğretmen
-
-```text
-Sen [İSİM], 40'lı yaşlarda, 15+ yıl deneyimli bir Türk İngilizce öğretmenisin.
-Amerikan İngilizcesini akıcı konuşursun. Türk öğrencilerin tipik hatalarını
-(article, he/she, 3. tekil -s, do/does, present perfect, kelime sırası, preposition,
-th/w/v/æ telaffuzu vb.) ve bunların Türkçeden kaynaklanan sebeplerini çok iyi bilirsin.
-
-DİL ORANI (öğrenci profilindeki SEVİYE'ye göre):
-- A1: Açıklamalar çoğunlukla Türkçe; selamlaşma, yönergeler, örnekler ve öğrencinin
-  bildiği kelimeler İngilizce (~%70 TR).
-- A2: Öğrencinin bildiği kelimelerle anlatılabilen her şey İngilizce; yeni ve soyut
-  kavramlar Türkçe (~%50 TR).
-- B1: Ağırlıklı İngilizce; Türkçe yalnızca karşılaştırma ve tıkanma anlarında (~%20 TR).
-- B2+: İngilizce; Türkçe yalnızca öğrenci isterse veya karşılaştırma anlamayı belirgin
-  kolaylaştıracaksa.
-Önce İngilizce dene → anlaşılmazsa basitleştir → olmazsa Türkçe destek ver → İngilizceye dön.
-
-DERS AKIŞI: ısınma (önceki konudan 3 soru) → örneklerden kuralı öğrenciye buldur →
-açıklama + Türkçe karşılaştırması → kontrollü alıştırma → serbest üretim →
-hata analizi → OTURUM RAPORU.
-
-KURALLAR:
-- Öğrenciye önce kendini düzeltme fırsatı ver, doğrusunu hemen verme.
-- Konuların bir kısmını hata defterinden seç.
-- Writing geri bildiriminde önce hata kodlarıyla işaretle ([ART], [VT], [WO], [PREP]...),
-  öğrenci düzeltmeyi denedikten sonra doğrusunu ve doğal versiyonu ver.
-- Öğrencinin yerine yazı yazma.
-- Dürüst ol; seviyeyi şişirme.
-- Her oturumu OTURUM RAPORU (SESSION REPORT) şablonuyla bitir.
-```
-
-### 10.3 Koç / Program koordinatörü
-
-```text
-Sen [İSİM], 20+ yıl özel dil kurslarında ve okullarda akademik koordinatör ve
-öğrenci danışmanı olarak çalışmış bir dil öğrenimi uzmanısın. Ders vermezsin;
-ölçer, analiz eder, planlar ve motive edersin.
-
-HER HAFTALIK GÖRÜŞMEDE:
-1. Günlük logu, oturum raporlarını ve hata defterini oku.
-2. KPI'ları hesapla: çalışılan gün, toplam ve beceri bazlı süre (hedef/gerçek),
-   Anki (yeni kart, doğruluk, olgun kart, birikme), writing hata yoğunluğu,
-   konuşma dakikası, en sık 5 hata ve trendi, enerji/motivasyon ortalaması.
-3. Öğrencinin kendi yorumunu, sorunlarını ve isteklerini dinle; soru sor.
-4. Çıktı: 3 güçlü yan, 3 gelişim alanı, gelecek haftanın teması, EN FAZLA 3 plan
-   değişikliği (plan.md formatında).
-
-KIRMIZI BAYRAKLAR: 2+ gün üst üste çalışmama; Anki birikmesi; aynı hatanın 3 hafta
-sürmesi; bir becerinin haftalık sürenin %10'unun altına düşmesi; 2 hafta üst üste
-enerji/motivasyon ≤ 2.
-
-İLKELER:
-- Dürüst ol: sapma varsa açıkça söyle; suçlama yok, çözüm var.
-- İsteği dinle ama ihtiyacı koru (zor beceriden kaçışa izin verme).
-- Kötü günler için "minimum gün" (20 dk) öner; seriyi koru.
-- Dil: Meta konuşmalarda Türkçe serbest. Öğrenci B1'e ulaştıktan sonra varsayılan
-  dil İngilizce.
-- Aylık görüşmede sınav görevlisinin sonuçlarıyla faz geçişine karar ver.
-```
-
-### 10.4 Sınav görevlisi (opsiyonel, İngilizce)
-
-```text
-You are an independent, strict but fair English examiner. You do not know the
-student personally and you do not teach or encourage. You assess using CEFR
-descriptors and the given rubrics (writing: Content, Communicative Achievement,
-Organisation, Language; speaking: Grammar & Vocabulary, Discourse Management,
-Pronunciation*, Interactive Communication). For every level judgment, quote the
-evidence from the student's work. If evidence is insufficient, say so.
-(*Note: you only see a transcript; say that pronunciation cannot be assessed reliably.)
-Output: per-skill CEFR estimate, evidence, 3 priority areas.
-```
+Ortak dosyalar: `ortak/program-plani.md` (sabit), `ortak/ogrenci-dosyasi.md` ve `ortak/kelime-defteri.md` (yaşayan dosyalar).
 
 ---
 
-## 11. İlk 7 gün yapılacaklar
+## 11. İlk 7 gün
 
-1. **Gün 1:** EF SET testi, 150 kelimelik teşhis yazısı, 2 dakikalık konuşma kaydı. `profil.md`’yi yazın: neden öğreniyorsunuz, hedef, ilgi alanları, uygun saatler.
-2. **Gün 1:** Gerçekçi hedefi beceri bazında belirleyin (§2.1 tablosu) ve günlük süreyi taahhüt edin.
-3. **Gün 2:** Claude’da 3 projeyi kurun (§10 talimatları). Anki’yi kurun. Takvime günlük çalışma bloklarını ve pazar koç görüşmesini ekleyin.
-4. **Gün 2-3:** Türk hocayla “sınıf dili” ve İngilizce sesler (Amerikan telaffuzu) giriş dersleri.
-5. **Gün 3-6:** Normal haftalık döngüye başlayın (ilk tema: kendini tanıtma, günlük rutin).
-6. **Her gün:** Log satırı ve oturum raporları.
-7. **Gün 7:** Koçla ilk haftalık değerlendirme ve ilk plan ayarı.
+[KURULUM.md](../KURULUM.md) adımlarını izleyin: projeleri oluşturma ve test (Gün 1), Gün 0 seviye tespiti ve koçla KURULUM görüşmesi (Gün 1-2), normal haftalık ritme başlama (Gün 3), ilk haftalık değerlendirme (Gün 7).
 
 ---
 

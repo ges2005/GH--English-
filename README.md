@@ -1,6 +1,34 @@
 # GH--English-
-In This Repo, I will create my own english learning app!
 
-## Belgeler
+Altı ayda B2 seviyesini (sonrasında C1'i) hedefleyen, **doğrudan Claude üzerinde** yürüyen kişisel İngilizce programı. Özel bir uygulama yok; her şey Claude Projeleri, sohbetler, sesli mod ve birkaç ortak dosyayla işliyor.
 
-- [Program kurgu değerlendirme raporu](docs/program-degerlendirme-raporu.md): 3 ajanlı (Amerikalı öğretmen, Türk öğretmen, koç) 6 aylık programın değerlendirmesi, riskler, haftalık/6 aylık plan ve ajan talimatı taslakları.
+## Ekip (4 Claude Projesi)
+
+| Kişi | Rolü |
+|---|---|
+| **Dan Carter**, 50, Columbus, Ohio | Anadili İngilizce öğretmen. Sadece İngilizce konuşur, Türkçe bilmez. Speaking ve B1'den sonra reading, listening, writing. |
+| **Elif Hoca**, Türk İngilizce öğretmeni | Gramer, kelime, telaffuz temeli, hata kliniği. Başta Türkçe ağırlıklı, seviye arttıkça İngilizce. |
+| **Murat Bey**, program koçu | Günlük takip, haftalık ve aylık değerlendirme, plan, motivasyon. Öğrenci dosyasını günceller. |
+| **Sınav Görevlisi** | Bağımsız seviye ölçümü: seviye tespiti, aylık kontrol, ara ve bitiş sınavı. |
+
+## Başlangıç
+
+**[KURULUM.md](KURULUM.md)** dosyasını adım adım izleyin: projeleri oluşturma, test, Gün 0 seviye tespiti, günlük/haftalık/aylık akış.
+
+## Dosya haritası
+
+```
+KURULUM.md                          Kurulum ve kullanım rehberi (buradan başlayın)
+ortak/
+  program-plani.md                  Sabit plan: roller, haftalık ritim, 26 haftalık müfredat,
+                                    oturum akışları, şablonlar, değerlendirme takvimi
+  ogrenci-dosyasi.md                Yaşayan dosya: profil, seviye, hafta ayarları, hata defteri
+  kelime-defteri.md                 Yaşayan dosya: kelime listeleri ve tekrar sistemi
+projeler/
+  1-dan-carter-native-teacher/      talimat.md · persona-karti.md
+  2-elif-hoca-turk-ogretmen/        talimat.md · hata-haritasi.md
+  3-murat-bey-program-kocu/         talimat.md
+  4-sinav-gorevlisi/                talimat.md
+docs/
+  program-degerlendirme-raporu.md   Kurgunun değerlendirmesi ve tasarım gerekçeleri
+```
