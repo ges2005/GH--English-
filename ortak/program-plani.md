@@ -10,7 +10,7 @@
 | Kişi | Proje | Rolü | Dili |
 |---|---|---|---|
 | **Dan Carter** (50, Columbus, Ohio) | Native Teacher | Anadili İngilizce öğretmen: speaking, B1+ reading/listening/writing, doğallık, kültür | Sadece İngilizce, Türkçe bilmez |
-| **Elif Hoca** (Elif Arslan, 42) | Türk Öğretmen | Gramer, kelime, telaffuz temeli, hata kliniği, A1-A2'de tüm beceriler; B2'den sonra doğruluk koçu | Seviyeye göre Türkçe → İngilizce |
+| **Elif Hoca** (Elif Arslan, 42) | Türk Öğretmen | Gramer (ders kitabı: *English Grammar in Use*, bkz. `egiu-haritasi.md`), kelime, telaffuz temeli, hata kliniği, A1-A2'de tüm beceriler; B2'den sonra doğruluk koçu | Seviyeye göre Türkçe → İngilizce |
 | **Murat Bey** (Murat Kaya, 55) | Program Koçu | Takip, ölçüm, haftalık/aylık değerlendirme, plan, motivasyon. Öğrenci dosyasını o günceller | Meta konuşmada Türkçe; B1'den sonra İngilizce |
 | **Sınav Görevlisi** | Examiner | Bağımsız seviye ölçümü: seviye tespiti, aylık kontrol, ara ve bitiş sınavı | İngilizce (A0-A1'de yönergeler Türkçe olabilir) |
 
@@ -50,11 +50,11 @@
 
 | Gün | 1. oturum | 2. oturum | 3. oturum |
 |---|---|---|---|
-| **Pazartesi** | VOCAB | READING (tema metni) | GRAMMAR 1 |
+| **Pazartesi** | VOCAB | READING (tema metni) | Kitap: 2 ana ünite (kendi başına) → GRAMMAR 1 |
 | **Salı** | VOCAB | LISTENING | SPEAKING (tema sohbeti, sesli mod) |
-| **Çarşamba** | VOCAB | WRITING (haftalık görev) | GRAMMAR 2 / alıştırma |
+| **Çarşamba** | VOCAB | WRITING (haftalık görev) | Kitap: kalan ana ünite(ler) → GRAMMAR 2 |
 | **Perşembe** | VOCAB | Kapsamlı okuma veya dinleme (dış kaynak, keyif için) | SPEAKING (rol oyunu) + PRONUNCIATION (15 dk) |
-| **Cuma** | VOCAB | WRITING (yeniden yazım) | ERROR CLINIC |
+| **Cuma** | VOCAB | WRITING (yeniden yazım) | Kitap: Cuma ipliği + ek alıştırma → ERROR CLINIC |
 | **Cumartesi** | VOCAB | SPEAKING (hikâye, 4/3/2, tartışma) | Keyif: dizi/film (İngilizce altyazı) |
 | **Pazar** | Hafta sonu kelime testi + HAFTAYI KAPAT | HAFTALIK DEĞERLENDİRME (koç) | Dinlenme |
 
@@ -77,6 +77,7 @@
 
 > Varsayım: A1-A2 başlangıç. Başlangıç haftasını seviye tespitinden sonra koç seçer (ör. B1 başlangıç → Hafta 14). Koç gerekirse bir haftayı uzatır veya iki haftayı birleştirir.
 > Hafta 7'den itibaren VOCAB'a her hafta temayla ilgili 5-8 phrasal verb eklenir.
+> Her haftanın *English Grammar in Use* üniteleri, kitap tekrarları ve Amerikan İngilizcesi notları: `egiu-haritasi.md`.
 
 ### Faz 1: Temel (A1 → A2), Hafta 1-6
 
@@ -136,16 +137,29 @@
 3. **Alıştırma (5-10 dk):** Eşleştirme veya boşluk doldurma (istenirse etkileşimli artifact).
 4. **Mini günlük (5 dk):** Öğrenci günün kelimelerinden en az 5'ini kullanarak gününü anlatan 5-8 cümle yazar. Elif kısa düzeltme yapar.
 5. **Kapanış:** Tek satır: `TODAY (Day N): kelime1, kelime2, …` ve LOG için sayılar (yeni kelime, tekrar başarı yüzdesi).
+- **Hafta 14-21, VOCAB ipliği:** Haftanın phrasal verb ve “kelime + edat” üniteleri (`egiu-haritasi.md`) yeni kelimelerin bir kısmını oluşturur. Öğrenci üniteyi önceden kendi başına yapar, VOCAB'ta kalıplar karta dönüşür ve tekrar sistemine girer.
 - **Pazar:** Haftanın tüm kelimelerinden test, ardından `HAFTAYI KAPAT` → güncellenmiş `kelime-defteri.md`.
 - **Ay sonu:** `AY SONU TESTİ` → ayın kelimelerinden en az 60 kelimelik örneklem.
 
-### GRAMMAR · Elif · 30-45 dk
+### GRAMMAR · Elif · kitap 20-30 dk + oturum 25-35 dk
+Ders kitabı *English Grammar in Use*. Haftanın üniteleri `egiu-haritasi.md` içinde. Kitap kuralı ve kontrollü alıştırmayı verir; Elif Hoca'nın işi açıklama, Türkçe karşılaştırma, Amerikan filtresi ve **serbest üretimdir**.
+
+**Faz 2-4 (B1 ve üstü) — önce kitap, sonra Elif:**
+1. *Kendi başına (20-30 dk):* Ünitenin sol sayfasını oku, sağ sayfadaki alıştırmaları deftere yap, cevap anahtarıyla (kitap s. 336) kontrol et, yanlışları işaretle. ABD notu olan ünitede `egiu-haritasi.md` §4'e bak.
+2. *Oturum açılışı:* `SESSION: GRAMMAR | Week 09 | Units 7, 8 | Score: U7 18/22, U8 15/20 | Wrong: 7.2/3, 7.2/5, 8.1/4 | Question: ...`
+3. Elif yanlışların ve soruların nedenini açıklar: Türkçe karşılaştırma (`hata-haritasi.md`) ve gerekiyorsa Amerikan kullanımı.
+4. Yanlışlara göre 6-8 maddelik ek alıştırma, haftanın temasında (etkileşimli artifact olabilir).
+5. **Serbest üretim (kitapta yok, en önemli adım):** Yapıyı kullanarak haftanın temasında 5 cümle veya kısa paragraf → düzeltme.
+6. REPORT (ünite numaraları ve kitap puanları dahil).
+- Bir ünitede başarı %60'ın altındaysa ünite bir sonraki oturumda tekrarlanır.
+
+**Faz 1 (A1-A2) — önce Elif, sonra kitap:**
 1. Isınma: önceki konudan 3 soru.
 2. Keşif: 5-6 örnek cümle; öğrenci kuralı bulmaya çalışır.
-3. Açıklama + Türkçe karşılaştırma (`hata-haritasi.md`).
-4. Kontrollü alıştırma (8-10 madde; etkileşimli artifact olabilir).
-5. Serbest üretim: konuyu kullanarak haftanın temasında 5 cümle veya kısa paragraf.
-6. Hata analizi → REPORT.
+3. Açıklama + Türkçe karşılaştırma; ünitenin sol sayfası birlikte okunur.
+4. Kontrollü alıştırma (8-10 madde).
+5. Serbest üretim: haftanın temasında 5 cümle.
+6. REPORT. *Ödev:* ünitenin sağ sayfası + cevap anahtarıyla kontrol; yanlışlar bir sonraki oturumun ısınmasına getirilir.
 
 ### READING · A1-A2 Elif / B1+ Dan · 30-40 dk
 1. Ön hazırlık: konu hakkında 2 tahmin sorusu.
@@ -197,8 +211,9 @@ Alt türler: serbest sohbet · rol oyunu (restoran, otel, doktor, alışveriş, 
 5. Cümle içinde pratik → REPORT.
 
 ### ERROR CLINIC · Elif · Cuma · 20-30 dk
-1. Kaynak: hata defteri ve öğrencinin yapıştırdığı, haftanın raporlarındaki hata satırları.
-2. En sık 2-3 hata seçilir: neden (Türkçe etkisi), kural, 10 maddelik hedefli alıştırma.
+0. *Öncesinde (kendi başına):* Haftanın Cuma ipliği ünitesi ve varsa kitabın Additional exercises tekrarı (`egiu-haritasi.md`).
+1. Kaynak: hata defteri, haftanın raporlarındaki hata satırları ve kitap çalışmasındaki yanlışlar.
+2. En sık 2-3 hata seçilir: neden (Türkçe etkisi), kural, 10 maddelik hedefli alıştırma. İnatçı hatalar için kitaptaki ilgili ünite ödev verilir (`egiu-haritasi.md` §5).
 3. Öğrenci kendi eski cümlelerini düzeltir.
 4. REPORT (her hatanın durumu: aktif / azalıyor / çözüldü).
 
@@ -235,7 +250,7 @@ Student: energy _/5 · hardest part: ___
 
 **Günlük LOG satırı** (koçun haftalık sohbetine, günün sonunda; dakika cinsinden):
 ```
-LOG 2026-11-09 | Vocab 30 (18 new, review 80%) | Reading 35 | Listening 0 | Writing 0 | Speaking 30 | Grammar 40 | Extra 20 (series) | Energy 4/5 | Note: ...
+LOG 2026-11-09 | Vocab 30 (18 new, review 80%) | Reading 35 | Listening 0 | Writing 0 | Speaking 30 | Grammar 40 (Book U7 18/22, U8 15/20) | Extra 20 (series) | Energy 4/5 | Note: ...
 ```
 
 ---
@@ -261,10 +276,10 @@ Hedef: günde 15-20 yeni kelime; tekrar başarısı %80-90.
 
 | Zaman | Ne yapılır |
 |---|---|
-| **Gün 0** | PLACEMENT (Sınav Görevlisi) + EF SET (önerilen, ücretsiz, dinleme dahil) + 2 dk konuşma kaydı + KURULUM (koç) |
+| **Gün 0** | PLACEMENT (Sınav Görevlisi) + EF SET (önerilen, ücretsiz, dinleme dahil) + 2 dk konuşma kaydı + KURULUM (koç) · Seviye B1+ ise kitabın **Study guide** testi (161 soru) |
 | **Hafta 4, 8, 17, 21** | MONTHLY (Sınav Görevlisi) + AY SONU TESTİ (kelime) + AYLIK DEĞERLENDİRME (koç) |
-| **Hafta 13** | MIDTERM + EF SET + 2 dk konuşma kaydı (Gün 0 ile aynı soru) |
-| **Hafta 26** | FINAL + EF SET + 2 dk konuşma kaydı |
+| **Hafta 13** | MIDTERM + EF SET + 2 dk konuşma kaydı (Gün 0 ile aynı soru) + Study guide bölüm 1-3 |
+| **Hafta 26** | FINAL + EF SET + 2 dk konuşma kaydı + Study guide (tamamı) |
 | Opsiyonel | Hafta 13 ve 26'da gerçek bir öğretmenle 30 dk konuşma değerlendirmesi (telaffuz için) |
 
 **Konuşma kaydı sorusu (her seferinde aynı):** *"Introduce yourself. Talk about your daily life, why you are learning English, and your plans for the future."*

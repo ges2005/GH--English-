@@ -1,32 +1,33 @@
 # Hata Haritası: Türk Öğrencilerin Tipik İngilizce Sorunları
 
 > Elif Hoca projesinin bilgi kaynağı. Her gramer ve telaffuz dersinde karşılaştırma yapmak için kullanılır.
+> “EGIU ünitesi” sütunu: ders kitabı *English Grammar in Use* (5. baskı) içinde hatanın çalışılacağı üniteler (bkz. `egiu-haritasi.md`).
 
 ---
 
 ## 1. Gramer ve kelime sırası
 
-| Sorun | Neden (Türkçe etkisi) | Tipik hata → doğrusu | Öğretme ipucu |
-|---|---|---|---|
-| **a/an/the** | Türkçede article yok | *I bought car.* → *I bought **a** car.* · *The life is beautiful.* → *Life is beautiful.* | "bir" ≈ a/an (ilk kez ve tekil), "o bildiğimiz" ≈ the. Genel anlamda çoğul ve sayılamaz isimde article yok. C1'de bile süren bir hata, her hafta küçük dozla tekrarlanmalı. |
-| **he/she karışıklığı** | Türkçede tek “o” var | *My sister… he is a doctor.* → *she* | Kişi isimlerini cinsiyete göre eşleştirme alıştırması; konuşmada anlık düzeltme. |
-| **3. tekil -s** | Türkçe fiil çekimi farklı işler | *She work in a bank.* → *works* | "he/she/it varsa fiile -s" kuralı; olumsuz ve soruda -s'nin does'a geçtiğini göster. |
-| **Sayıdan sonra çoğul** | Türkçede “üç kitap” tekil kalır | *three book* → *three books* | Türkçe ile birebir karşılaştır: “üç kitap” ama *three book**s***. |
-| **Yardımcı fiil (do/does/did)** | Türkçede soru eki (mi) var | *Where you live?* → *Where **do** you live?* · *I not like.* → *I **don't** like it.* | Soru formülü kalıbı: (Wh-) + do/does/did + özne + fiil. |
-| **Boş özne (it/there)** | Türkçede özne düşebilir | *Is very nice.* → ***It** is very nice.* · *Came yesterday.* → ***He** came yesterday.* | “İngilizce cümlenin her zaman bir öznesi vardır.” Hava durumu ve zaman cümleleriyle (it's raining) pratik. |
-| **var/yok → there is / have** | Doğrudan çeviri | *In my city has a big park.* → ***There is** a big park in my city.* | “Bir yerde var” = there is/are; “birinin var” = have. |
-| **Kelime sırası (SOV → SVO)** | Türkçede fiil sonda | *I every day coffee drink.* → *I drink coffee every day.* | Özne + Fiil + Nesne + Yer + Zaman kalıbı; zarf yerleri. |
-| **Present simple ve continuous** | “-iyor” ikisini de karşılayabilir | *I am living in Ankara since 2010.* → *I **have lived** / **have been living**…* · *I am liking it.* → *I like it.* | Kalıcı/alışkanlık ve şu an/geçici ayrımı; durum fiilleri (like, know, want) -ing almaz. |
-| **Present perfect ve past simple** | Türkçede -di/-miş ayrımı başka bir eksende (kanıtsallık) | *I have seen him yesterday.* → *I **saw** him yesterday.* | Zaman belli ise past simple; deneyim ya da şimdiye etkisi varsa present perfect. Zaman çizelgesiyle göster. |
-| **for / since / ago** | Türkçede “-dir”, “-den beri”, “önce” | *I live here since 3 years.* → *I **have lived** here **for** 3 years.* | for = süre, since = başlangıç noktası, ago = geçmişte bir an. |
-| **Relative clause** | Türkçede niteleyici isimden önce gelir | *the yesterday I bought book* → *the book (that) I bought yesterday* | “Dün aldığım kitap” cümlesini parça parça İngilizceye çevirme alıştırması. |
-| **Edatlar (in/on/at)** | Türkçede hal ekleri var | *at Monday* → *on Monday* · *in the bus* → *on the bus* | Zaman ve yer edatlarını üçgen şemayla göster (at nokta, on yüzey/gün, in alan/ay/yıl); kalıp olarak ezberlet. |
-| **Sayılamayan isimler** | Türkçede ayrım yok | *informations, advices, furnitures* | Sayılamayan isimler listesi; *a piece of advice*. |
-| **make / do, say / tell** | Türkçede tek fiil (yapmak, söylemek) | *do a mistake* → ***make** a mistake* · *She said me…* → *She **told** me…* | Kalıp (collocation) olarak öğret. |
-| **Gerund / infinitive** | Türkçede -mek/-me tek yapı | *I enjoy to swim.* → *I enjoy **swimming**.* | Fiil listeleri: enjoy/finish/avoid + -ing; want/decide/plan + to. |
-| **Phrasal verb'ler** | Türkçede karşılığı yok | *look for* yerine *search* demek; anlamı tahmin edememek | Temaya göre küçük gruplar (her hafta 5-8), cümle içinde, görsel bağlamla. |
-| **Çok uzun, virgülle bağlanan cümleler** | Türkçede uzun zarf-fiilli cümleler doğal | *I came home, I ate, I slept, I was tired.* | Bağlaçlar (because, so, but, although) ve cümleyi bölmek. |
-| **Kelime kelime çeviri ve kitap dili** | Okul kitapları ve Türkçeden birebir çeviri alışkanlığı | *Can I learn your name?* (adınızı öğrenebilir miyim) → *What's your name?* / *May I ask your name?* | Doğal günlük kalıplar; Dan'ın oturumlarından örnekler. |
+| Sorun | Neden (Türkçe etkisi) | Tipik hata → doğrusu | Öğretme ipucu | EGIU ünitesi |
+|---|---|---|---|---|
+| **a/an/the** | Türkçede article yok | *I bought car.* → *I bought **a** car.* · *The life is beautiful.* → *Life is beautiful.* | "bir" ≈ a/an (ilk kez ve tekil), "o bildiğimiz" ≈ the. Genel anlamda çoğul ve sayılamaz isimde article yok. C1'de bile süren bir hata, her hafta küçük dozla tekrarlanmalı. | 69-78 |
+| **he/she karışıklığı** | Türkçede tek “o” var | *My sister… he is a doctor.* → *she* | Kişi isimlerini cinsiyete göre eşleştirme alıştırması; konuşmada anlık düzeltme. | — (temel konu) |
+| **3. tekil -s** | Türkçe fiil çekimi farklı işler | *She work in a bank.* → *works* | "he/she/it varsa fiile -s" kuralı; olumsuz ve soruda -s'nin does'a geçtiğini göster. | 2 |
+| **Sayıdan sonra çoğul** | Türkçede “üç kitap” tekil kalır | *three book* → *three books* | Türkçe ile birebir karşılaştır: “üç kitap” ama *three book**s***. | 79 |
+| **Yardımcı fiil (do/does/did)** | Türkçede soru eki (mi) var | *Where you live?* → *Where **do** you live?* · *I not like.* → *I **don't** like it.* | Soru formülü kalıbı: (Wh-) + do/does/did + özne + fiil. | 49-51 |
+| **Boş özne (it/there)** | Türkçede özne düşebilir | *Is very nice.* → ***It** is very nice.* · *Came yesterday.* → ***He** came yesterday.* | “İngilizce cümlenin her zaman bir öznesi vardır.” Hava durumu ve zaman cümleleriyle (it's raining) pratik. | 84 |
+| **var/yok → there is / have** | Doğrudan çeviri | *In my city has a big park.* → ***There is** a big park in my city.* | “Bir yerde var” = there is/are; “birinin var” = have. | 84, 17 |
+| **Kelime sırası (SOV → SVO)** | Türkçede fiil sonda | *I every day coffee drink.* → *I drink coffee every day.* | Özne + Fiil + Nesne + Yer + Zaman kalıbı; zarf yerleri. | 109-110 |
+| **Present simple ve continuous** | “-iyor” ikisini de karşılayabilir | *I am living in Ankara since 2010.* → *I **have lived** / **have been living**…* · *I am liking it.* → *I like it.* | Kalıcı/alışkanlık ve şu an/geçici ayrımı; durum fiilleri (like, know, want) -ing almaz. | 1-4 |
+| **Present perfect ve past simple** | Türkçede -di/-miş ayrımı başka bir eksende (kanıtsallık) | *I have seen him yesterday.* → *I **saw** him yesterday.* | Zaman belli ise past simple; deneyim ya da şimdiye etkisi varsa present perfect. Zaman çizelgesiyle göster. | 7-8, 13-14 |
+| **for / since / ago** | Türkçede “-dir”, “-den beri”, “önce” | *I live here since 3 years.* → *I **have lived** here **for** 3 years.* | for = süre, since = başlangıç noktası, ago = geçmişte bir an. | 11-12 |
+| **Relative clause** | Türkçede niteleyici isimden önce gelir | *the yesterday I bought book* → *the book (that) I bought yesterday* | “Dün aldığım kitap” cümlesini parça parça İngilizceye çevirme alıştırması. | 92-97 |
+| **Edatlar (in/on/at)** | Türkçede hal ekleri var | *at Monday* → *on Monday* · *in the bus* → *on the bus* | Zaman ve yer edatlarını üçgen şemayla göster (at nokta, on yüzey/gün, in alan/ay/yıl); kalıp olarak ezberlet. | 121-127 |
+| **Sayılamayan isimler** | Türkçede ayrım yok | *informations, advices, furnitures* | Sayılamayan isimler listesi; *a piece of advice*. | 69-70 |
+| **make / do, say / tell** | Türkçede tek fiil (yapmak, söylemek) | *do a mistake* → ***make** a mistake* · *She said me…* → *She **told** me…* | Kalıp (collocation) olarak öğret. | 47 (say/tell) |
+| **Gerund / infinitive** | Türkçede -mek/-me tek yapı | *I enjoy to swim.* → *I enjoy **swimming**.* | Fiil listeleri: enjoy/finish/avoid + -ing; want/decide/plan + to. | 53-58, 60-66 |
+| **Phrasal verb'ler** | Türkçede karşılığı yok | *look for* yerine *search* demek; anlamı tahmin edememek | Temaya göre küçük gruplar (her hafta 5-8), cümle içinde, görsel bağlamla. | 137-145 |
+| **Çok uzun, virgülle bağlanan cümleler** | Türkçede uzun zarf-fiilli cümleler doğal | *I came home, I ate, I slept, I was tired.* | Bağlaçlar (because, so, but, although) ve cümleyi bölmek. | 113-116 |
+| **Kelime kelime çeviri ve kitap dili** | Okul kitapları ve Türkçeden birebir çeviri alışkanlığı | *Can I learn your name?* (adınızı öğrenebilir miyim) → *What's your name?* / *May I ask your name?* | Doğal günlük kalıplar; Dan'ın oturumlarından örnekler. | — |
 
 ---
 

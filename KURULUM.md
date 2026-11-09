@@ -25,8 +25,8 @@
 | Proje | Talimat dosyası | Bilgi kaynağına yüklenecek dosyalar |
 |---|---|---|
 | **Dan Carter – Native Teacher** | `projeler/1-dan-carter-native-teacher/talimat.md` | `persona-karti.md`, `program-plani.md`, `ogrenci-dosyasi.md` |
-| **Elif Hoca – Türk Öğretmen** | `projeler/2-elif-hoca-turk-ogretmen/talimat.md` | `hata-haritasi.md`, `program-plani.md`, `ogrenci-dosyasi.md`, `kelime-defteri.md` |
-| **Murat Bey – Program Koçu** | `projeler/3-murat-bey-program-kocu/talimat.md` | `program-plani.md`, `ogrenci-dosyasi.md` |
+| **Elif Hoca – Türk Öğretmen** | `projeler/2-elif-hoca-turk-ogretmen/talimat.md` | `hata-haritasi.md`, `program-plani.md`, `ogrenci-dosyasi.md`, `kelime-defteri.md`, `egiu-haritasi.md` |
+| **Murat Bey – Program Koçu** | `projeler/3-murat-bey-program-kocu/talimat.md` | `program-plani.md`, `ogrenci-dosyasi.md`, `egiu-haritasi.md` |
 | **Sınav Görevlisi (Examiner)** | `projeler/4-sinav-gorevlisi/talimat.md` | `program-plani.md`, `ogrenci-dosyasi.md` |
 
 ---
@@ -37,6 +37,7 @@
 - **Telefonda Claude uygulaması:** sesli mod (speaking ve listening) için.
 - **Bilgisayar veya tablet:** yazma ve dosya yükleme için daha rahattır.
 - **Bu repodaki dosyalar:** GitHub'da **Code → Download ZIP** ile indirebilirsiniz.
+- **Gramer ders kitabı:** Raymond Murphy, *English Grammar in Use*, 5. baskı (basılı veya PDF). Kitap sizin elinizde durur; **projelere yüklenmez**, çünkü 392 sayfa her mesajda kullanım limitinizi tüketir. Hangi hafta hangi ünitenin çalışılacağı `ortak/egiu-haritasi.md` içinde.
 - **Takvim/alarm:** Claude size kendiliğinden yazmaz; günlük çalışma saatlerini ve pazar koç görüşmesini takvime siz koyarsınız.
 - **Birden fazla kişi öğreniyorsanız:** Her kişinin kendi hesabı (veya en azından kendi dört projesi ve kendi öğrenci dosyası) olmalı.
 
@@ -73,10 +74,11 @@ Her proje için:
 1. **EF SET** (önerilen, ücretsiz, ~50 dk, okuma ve dinleme): Claude ses dinletemediği için dinleme seviyenizi en iyi dış ölçüt verir.
 2. **Sınav Görevlisi** → yeni sohbet → `SESSION: PLACEMENT`. Test bitince ASSESSMENT REPORT'u kopyalayın.
 3. **2 dakikalık konuşma kaydı** (telefonun ses kaydedicisiyle): *"Introduce yourself. Talk about your daily life, why you are learning English, and your plans for the future."* Kaydı saklayın; Hafta 13 ve 26'da aynı soruyla karşılaştıracaksınız.
-4. **Murat Bey** → yeni sohbet (adı: *Kurulum*) → `KURULUM` yazın. Placement raporunu ve EF SET sonucunu yapıştırın, görüşmeyi tamamlayın. Koç doldurulmuş `ogrenci-dosyasi.md`'yi verir.
-5. Bu dosyayı **dört projede de** değiştirin: eski boş dosyayı silin, yenisini yükleyin.
-6. Murat Bey'de **"Hafta 01"** (veya koçun seçtiği başlangıç haftası), Elif Hoca'da **"Kelime – Hafta 01"** sohbetlerini açın.
-7. Takvime günlük çalışma bloklarını ve **pazar koç görüşmesini** ekleyin.
+4. **Seviye B1 veya üstü çıktıysa:** Kitabın sonundaki **Study guide** testini (161 soru, ~60 dk, kitap s. 326) yapın ve cevap anahtarıyla (s. 372) puanlayın. Yanlış yaptığınız soruların yanındaki ünite numaralarını not edin. A1-A2 çıktıysa bu adımı atlayın.
+5. **Murat Bey** → yeni sohbet (adı: *Kurulum*) → `KURULUM` yazın. Placement raporunu, EF SET sonucunu ve (varsa) Study guide puanıyla ünite listesini yapıştırın, görüşmeyi tamamlayın. Koç doldurulmuş `ogrenci-dosyasi.md`'yi verir.
+6. Bu dosyayı **dört projede de** değiştirin: eski boş dosyayı silin, yenisini yükleyin.
+7. Murat Bey'de **"Hafta 01"** (veya koçun seçtiği başlangıç haftası), Elif Hoca'da **"Kelime – Hafta 01"** sohbetlerini açın.
+8. Takvime günlük çalışma bloklarını ve **pazar koç görüşmesini** ekleyin.
 
 ---
 
@@ -107,6 +109,16 @@ LOG 2026-11-09 | Vocab 30 (18 new, review 80%) | Reading 35 | Listening 0 | Writ
 
 Raporun son satırını (*Student: energy _/5 · hardest part: ___*) koça yapıştırmadan önce siz doldurun.
 
+**Kitapla gramer günleri (Pazartesi, Çarşamba, Cuma):**
+1. `egiu-haritasi.md` (veya öğrenci dosyasındaki *BU HAFTANIN KİTAP ÜNİTELERİ*) içinden günün ünitesini açın.
+2. Seviye B1 ve üstüyse: sol sayfayı okuyun, sağ sayfadaki alıştırmaları deftere yapın, cevap anahtarıyla (s. 336) kontrol edin. Ünitede ABD notu varsa haritanın §4 bölümüne bakın; kitabın İngiliz kullanımı yerine Amerikan kullanımını yazdıysanız cevabınız doğrudur.
+3. Elif projesinde yeni sohbet açın ve puanınızla yanlışlarınızı getirin:
+```
+SESSION: GRAMMAR | Week 09 | Units 7, 8 | Score: U7 18/22, U8 15/20 | Wrong: 7.2/3, 7.2/5, 8.1/4 | Question: ...
+```
+4. Seviye A1-A2 iken sıra tersinedir: önce Elif anlatır, kitabın sağ sayfası ödev olur.
+5. LOG satırına kitap puanlarını ekleyin: `Grammar 40 (Book U7 18/22, U8 15/20)`.
+
 ---
 
 ## 5. Haftalık akış (pazar, ≈30 dk)
@@ -121,7 +133,7 @@ Raporun son satırını (*Student: energy _/5 · hardest part: ___*) koça yapı
 
 1. **Sınav Görevlisi:** `SESSION: MONTHLY | Week NN` (Hafta 13'te `MIDTERM`, Hafta 26'da `FINAL`) → ASSESSMENT REPORT.
 2. **Elif → kelime sohbeti:** `AY SONU TESTİ` → arşiv listelerini kendi `kelime-arsivi.md` dosyanıza ekleyin (projeye yüklemeyin) ve küçültülmüş `kelime-defteri.md`'yi projeye yükleyin.
-3. **Hafta 13 ve 26:** EF SET'i tekrarlayın; aynı soruyla 2 dakikalık konuşma kaydı yapıp Gün 0 kaydıyla karşılaştırın.
+3. **Hafta 13 ve 26:** EF SET'i tekrarlayın; aynı soruyla 2 dakikalık konuşma kaydı yapıp Gün 0 kaydıyla karşılaştırın. Kitabın Study guide testini de yapın (Hafta 13: bölüm 1-3; Hafta 26: tamamı) ve puanı koça bildirin.
 4. **Murat Bey:** `AYLIK DEĞERLENDİRME` + sınav raporu (ve varsa EF SET) → faz, çalışma seviyesi, Türkçe oranı kararı → yeni `ogrenci-dosyasi.md` → dört projeye yükleyin.
 
 ---
@@ -174,6 +186,8 @@ Claude'un yapamadığı birkaç şey var. Bunlar uygulama geliştirmek değil, s
 | Sesli modda persona yok | Sohbeti metinle açıp sonra sesli moda geçin. |
 | Kullanım limitine takılıyorum | Oturum sohbetlerini kısa tutun; haftalık sohbetlere sadece rapor ve LOG yapıştırın; dinleme ve okumanın bir kısmını dış kaynakla yapın; gerekirse planınızı yükseltin. |
 | Kelime tekrarı çok uzun sürüyor | Günlük yeni kelimeyi 10-15'e düşürün. Elif'ten tekrar kelimelerini etkileşimli kart (artifact) olarak hazırlamasını isteyin. |
+| Kitabın cevap anahtarı benim cevabıma yanlış diyor ama Amerikan İngilizcesinde doğru gibi | `egiu-haritasi.md` §4'teki ABD notlarına bakın. Emin değilseniz Elif'e sorun; Amerikan kullanımı doğru sayılır. |
+| Kitap ünitesi çok zor geldi (%60 altı) | Üniteyi bir sonraki GRAMMAR oturumunda Elif'le baştan çalışın; koç ek üniteleri kaldırıp ana üniteleri korur. |
 | Dosyayı güncellemeyi unuttum | Koçun son sohbetinde en son verdiği dosyayı tekrar isteyin ve yükleyin. |
 | Bir gün çalışamadım | Minimum gün yapın (20 dk). İki gün üst üste kaçırmayın. Koça LOG'da durumu yazın. |
 | Hedefin gerisindeyim | Aylık değerlendirmede koçla hedefi veya günlük süreyi birlikte revize edin. Sessizce bırakmak en kötü seçenektir. |

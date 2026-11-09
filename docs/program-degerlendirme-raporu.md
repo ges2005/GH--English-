@@ -339,7 +339,7 @@ Claude’un sesli modu, Claude’un sesine cevap vererek etkileşimli dinleme pr
 
 ### 5.6 Gramer
 
-- **Temel kaynak:** Raymond Murphy’nin *Grammar in Use* serisinin **Amerikan İngilizcesi sürümleri** (*Basic Grammar in Use*, *Grammar in Use Intermediate*). Türk hoca konuları bu sırayla işleyebilir.
+- **Ders kitabı:** Raymond Murphy, *English Grammar in Use*, 5. baskı (İngiliz İngilizcesi, B1-B2). 145 ünitenin haftalara dağılımı, kitabın teşhis testi (Study guide), ek alıştırmalar ve Amerikan İngilizcesi farkları `ortak/egiu-haritasi.md` içinde. B1'den itibaren öğrenci üniteyi önce kendi başına çalışır, Elif Hoca yanlışlara, Türkçe karşılaştırmaya ve serbest üretime odaklanır.
 - **İki kaynaktan konu:** (1) seviye müfredatı (§7) ve (2) hata defteri (gerçek hatalarınız).
 - **Aralıklı gramer tekrarı:** Her konu 1 gün, 1 hafta ve 1 ay sonra kısa testle tekrar edilir. Önemli kalıplar kelime defterine de eklenebilir.
 

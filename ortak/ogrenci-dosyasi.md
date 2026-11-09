@@ -17,6 +17,7 @@
 | GÜNCEL HAFTA / FAZ | — (ör. Hafta 07 / Faz 2) |
 | BU HAFTANIN TEMASI | — |
 | BU HAFTANIN GRAMERİ | — |
+| BU HAFTANIN KİTAP ÜNİTELERİ (English Grammar in Use) | Ana: — · Cuma ipliği: — · VOCAB ipliği: — · Tekrar: — |
 | BU HAFTANIN YAZMA GÖREVİ | — |
 | BU HAFTANIN KONUŞMA GÖREVİ | — |
 | BU HAFTANIN TELAFFUZ ODAĞI | — |
@@ -59,13 +60,22 @@
 
 ---
 
-## 5. Telaffuz odakları
+## 5. Kitap ilerlemesi (English Grammar in Use)
+
+- **Tamamlanan üniteler:** — / 145
+- **Ortalama ünite başarısı (son 4 hafta):** —
+- **Tekrar edilecek üniteler (%60 altı):** —
+- **Öncelikli üniteler (Study guide'dan):** —
+
+---
+
+## 6. Telaffuz odakları
 
 - —
 
 ---
 
-## 6. Haftalık özet geçmişi (en yeni üstte; her hafta tek satır)
+## 7. Haftalık özet geçmişi (en yeni üstte; her hafta tek satır)
 
 | Hafta | Gün | Toplam süre | Yeni kelime | Öne çıkan | Sonraki hafta odağı |
 |---|---|---|---|---|---|
@@ -73,16 +83,17 @@
 
 ---
 
-## 7. Test sonuçları
+## 8. Test sonuçları
 
 | Tarih | Test | Sonuç |
 |---|---|---|
 | — | PLACEMENT | — |
 | — | EF SET | — |
+| — | Study guide (EGIU) | — |
 
 ---
 
-## 8. Öğretmenlere notlar (koçtan)
+## 9. Öğretmenlere notlar (koçtan)
 
 **For Dan (in English):**
 - —
